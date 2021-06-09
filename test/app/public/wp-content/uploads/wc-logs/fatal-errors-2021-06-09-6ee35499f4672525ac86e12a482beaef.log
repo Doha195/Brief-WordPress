@@ -1,0 +1,11 @@
+2021-06-09T09:02:02+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in C:\Users\Youcode\Local Sites\test\app\public\wp-includes\class-wp-object-cache.php:493
+Stack trace:
+#0 C:\Users\Youcode\Local Sites\test\app\public\wp-includes\class-wp-object-cache.php(290): WP_Object_Cache->_exists('alloptions', 'options')
+#1 C:\Users\Youcode\Local Sites\test\app\public\wp-includes\cache.php(125): WP_Object_Cache->get('alloptions', 'options', false, NULL)
+#2 C:\Users\Youcode\Local Sites\test\app\public\wp-includes\option.php(231): wp_cache_get('alloptions', 'options', false)
+#3 C:\Users\Youcode\Local Sites\test\app\public\wp-includes\option.php(117): wp_load_alloptions()
+#4 C:\Users\Youcode\Local Sites\test\app\public\wp-includes\link-template.php(3266): get_option('home')
+#5 C:\Users\Youcode\Local Sites\test\app\public\wp-includes\link-template.php(3244): get_home_url(NULL, '', NULL)
+#6 C:\Users\Youcode\Local Sites\test\app\public\wp-includes\general-template.php(785): home_url()
+#7 C:\Users\Youcode\Local Sites\t in C:\Users\Youcode\Local Sites\test\app\public\wp-includes\class-wp-object-cache.php on line 493
+
